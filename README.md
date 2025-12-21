@@ -66,5 +66,5 @@ Cette approche est comparée implicitement aux méthodes classiques à seuil fix
 ---
 
 ## 👤 Auteur
-Projet réalisé dans un cadre personnel / académique à des fins de formation en traitement du signal et machine learning.
+Projet réalisé dans un cadre personnel / académique à des fins de formation en électronique et machine learning embarqué.
 
