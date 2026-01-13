@@ -62,6 +62,7 @@ Caractéristiques temporelles calculées sur fenêtres glissantes :
 ---
 
 ## 📁 Structure du projetsignal-anomaly-detection/
+signal-anomaly-detection/
 │
 ├── data/raw/              # Données brutes générées
 ├── matlab/                # Scripts de simulation du signal
@@ -73,8 +74,6 @@ Caractéristiques temporelles calculées sur fenêtres glissantes :
 ├── requirements.txt       # Dépendances Python
 ├── LICENSE
 └── README.md
-
----
 
 ## 📊 Résultats
 
