@@ -184,39 +184,6 @@ scipy>=1.7.0
 
 ---
 
-## 📊 Exemple de résultats
-
-```
-=== Rapport de détection ===
-Anomalies détectées : 47/50
-Taux de détection : 94%
-Faux positifs : 3
-Temps d'exécution : 0.82s
-```
-
-Le modèle permet de :
-- Détecter automatiquement les pics impulsionnels même en présence de bruit
-- Réduire les faux positifs comparé aux méthodes à seuil fixe
-- Adapter la sensibilité via le paramètre de contamination
-
----
-
-## 🧪 Tests et validation
-
-Pour tester avec différents niveaux de bruit :
-
-```bash
-python run_experiments.py --noise-levels 0.1,0.5,1.0,2.0
-```
-
-Pour comparer avec d'autres algorithmes :
-
-```bash
-python compare_algorithms.py --methods isolation_forest,lof,ocsvm
-```
-
----
-
 ## 🚀 Perspectives d'évolution
 
 - [ ] Extension à des signaux réels (capteurs industriels, bio-signaux)
@@ -233,19 +200,6 @@ python compare_algorithms.py --methods isolation_forest,lof,ocsvm
 - Traitement du signal numérique
 - Machine learning non supervisé
 - Programmation MATLAB et Python
-- Conception de pipelines ML end-to-end
-- Validation d'algorithmes sur données synthétiques
-
----
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/amelioration`)
-3. Commit vos changements (`git commit -m 'Ajout nouvelle feature'`)
-4. Push (`git push origin feature/amelioration`)
-5. Ouvrir une Pull Request
 
 ---
 
