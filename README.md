@@ -93,9 +93,8 @@ Le modèle permet de :
 ## 👨‍💻 Auteur
 
 **Bilel BEN SAID**  
-Ingénieur en Électronique et Machine Learning Embarqué
+Etudiant Ingénieur en Électronique et Systèmes Embarqué
 
-📧 [Contact](mailto:votre.email@exemple.com) | 💼 [LinkedIn](https://linkedin.com/in/votre-profil) | 🔗 [Portfolio](https://votre-site.com)
 
 ---
 
