@@ -1,1 +1,110 @@
-# Signal Anomaly Detection with Machine Learning ## 📌 Description Ce projet vise à simuler un signal temporel bruité contenant des événements rares (pics impulsionnels), puis à détecter automatiquement ces anomalies à l’aide d’une approche de **machine learning non supervisée**. L’objectif est de construire une chaîne complète : **simulation → extraction de caractéristiques → détection d’anomalies**. --- ## 🧠 Principe général 1. Génération d’un signal synthétique 2. Ajout d’un bruit gaussien blanc additif (AWGN) 3. Insertion de pics impulsionnels courts simulant des événements rares 4. Extraction de caractéristiques temporelles 5. Détection des anomalies par **Isolation Forest** --- ## 📁 Structure du projet --- ## 🔊 Modélisation du signal - Signal temporel synthétique - Bruit gaussien blanc additif généré avec `randn` - Pics impulsionnels unitaires d’amplitude élevée - Les pics représentent des anomalies ponctuelles rares Le niveau de bruit peut être ajusté afin d’étudier la robustesse de l’algorithme. --- ## 🤖 Méthode de détection La détection des anomalies repose sur **Isolation Forest**, un algorithme : - non supervisé - adapté aux événements rares - robuste en l’absence d’étiquettes Cette approche est comparée implicitement aux méthodes classiques à seuil fixe. --- ## 🛠️ Technologies utilisées - **MATLAB** : simulation et génération du signal - **Python** : - NumPy - scikit-learn - **Machine Learning non supervisé** --- ## 🎯 Objectifs pédagogiques - Comprendre l’impact du bruit sur un signal - Simuler un environnement de test contrôlé - Mettre en œuvre une détection d’anomalies moderne - Relier traitement du signal et machine learning --- ## 🚀 Perspectives - Ajout de bruit coloré ou non stationnaire - Détection en temps réel - Comparaison avec d’autres méthodes (seuils adaptatifs, LOF, autoencodeurs) --- ## 👤 Auteur Projet réalisé dans un cadre personnel / académique à des fins de formation en électronique et machine learning embarqué.  Je suis Bilel BEN SAID l'auteur justecorrige moi le read me pour que je mette le projet sur linkedin
+# 🎯 Signal Anomaly Detection with Machine Learning
+
+## 📌 Description
+
+Ce projet présente une chaîne complète de **détection d'anomalies dans des signaux temporels** en combinant traitement du signal et machine learning. Il simule un signal bruité contenant des événements rares (pics impulsionnels) et les détecte automatiquement via une approche non supervisée.
+
+**Pipeline complet** : Simulation → Extraction de features → Détection ML
+
+---
+
+## 🧠 Contexte et enjeux
+
+La détection d'anomalies dans les signaux est cruciale dans de nombreux domaines :
+- Maintenance prédictive (vibrations, capteurs industriels)
+- Surveillance électronique et télécommunications
+- Traitement du signal biomédical (ECG, EEG)
+- Systèmes embarqués temps réel
+
+Ce projet démontre comment le machine learning peut surpasser les méthodes classiques à seuil fixe dans des environnements bruités.
+
+---
+
+## 🔊 Génération du signal synthétique
+
+Le signal de test comprend :
+- **Signal de base** : composante temporelle synthétique
+- **Bruit AWGN** : bruit blanc gaussien additif paramétrable
+- **Anomalies** : pics impulsionnels d'amplitude élevée simulant des événements rares
+
+Cette approche permet de **contrôler précisément** le rapport signal/bruit et d'évaluer la robustesse de l'algorithme.
+
+---
+
+## 🤖 Détection par Isolation Forest
+
+### Pourquoi Isolation Forest ?
+
+- ✅ **Non supervisé** : pas besoin d'étiquettes d'entraînement
+- ✅ **Optimisé pour les anomalies rares** : isole efficacement les outliers
+- ✅ **Performances** : complexité linéaire, adapté aux données volumineuses
+- ✅ **Robustesse** : moins sensible au bruit que les méthodes à seuil
+
+### Extraction de features
+
+Caractéristiques temporelles calculées sur fenêtres glissantes :
+- Amplitude moyenne et écart-type
+- Variance locale
+- Dérivée et gradient
+- Énergie du signal
+
+---
+
+## 🛠️ Stack technique
+
+| Composant | Technologie |
+|-----------|-------------|
+| **Simulation signal** | MATLAB |
+| **Processing & ML** | Python (NumPy, scikit-learn, Pandas) |
+| **Visualisation** | Matplotlib |
+| **Paradigme** | Machine Learning non supervisé |
+
+---
+
+## 📊 Résultats
+
+Le modèle permet de :
+- Détecter automatiquement les pics impulsionnels même en présence de bruit
+- Réduire les faux positifs comparé aux méthodes à seuil fixe
+- Adapter la sensibilité via le paramètre de contamination
+
+---
+
+## 🚀 Perspectives d'évolution
+
+- [ ] Extension à des signaux réels (capteurs industriels, bio-signaux)
+- [ ] Implémentation temps réel pour systèmes embarqués
+- [ ] Comparaison avec d'autres algorithmes (LOF, One-Class SVM, Autoencoders)
+- [ ] Traitement de bruit coloré et non-stationnaire
+- [ ] Optimisation pour déploiement sur microcontrôleurs (edge ML)
+
+---
+
+## 💡 Compétences démontrées
+
+- Traitement du signal numérique
+- Machine learning non supervisé
+- Programmation MATLAB et Python
+- Conception de pipelines ML end-to-end
+- Validation d'algorithmes sur données synthétiques
+
+---
+
+## 👨‍💻 Auteur
+
+**Bilel BEN SAID**  
+Ingénieur en Électronique et Machine Learning Embarqué
+
+📧 [Contact](mailto:votre.email@exemple.com) | 💼 [LinkedIn](https://linkedin.com/in/votre-profil) | 🔗 [Portfolio](https://votre-site.com)
+
+---
+
+## 📄 Licence
+
+Ce projet est développé à des fins pédagogiques et de démonstration de compétences.
+
+---
+
+## 🌟 Keywords
+
+`#MachineLearning` `#SignalProcessing` `#AnomalyDetection` `#Python` `#MATLAB` `#IsolationForest` `#EmbeddedML` `#DataScience` `#Electronics`
